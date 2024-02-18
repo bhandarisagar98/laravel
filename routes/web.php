@@ -36,6 +36,7 @@ Route::post('/parent/entry-form',[PreAdmitFormsController::class,'store'])->name
 
 //staff preadmit form routes
 Route::get('/staff/entry-form',[PreAdmitFormsController::class,'index'])->name('staff-view-entry-form');
+Route::get('staff/view-single-entry-form/{id}',[PreAdmitFormsController::class,'show'])->name('staff-view-single-admission-form');
 Route::get('/staff/entry-formdelete/{id}',[PreAdmitFormsController::class,'destroy'])->name('staff-delete-entry-form');
 
 

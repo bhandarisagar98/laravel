@@ -71,7 +71,8 @@ class PreAdmitFormsController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $rehab = PreAdmitForms::find($id);
+        return view('staff.pages.admissionformsinglepage',compact("rehab"));
     }
 
     /**
