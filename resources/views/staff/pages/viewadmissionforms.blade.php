@@ -69,7 +69,7 @@ td img {
         @foreach($rehab as $r)
         <tr>
             <td>{{$r->patient_name}}</td>
-            <td><img src="{{asset('images/patient_image/'. $r->patient_image)}}" alt="{{$r->patient_name}}" height="200"></td>
+            <td><img src="{{asset('images/patient_image/'. $r->patient_image)}}" height="200"></td>
             <td>
                 <a href="{{route('staff-view-single-admission-form',$r->id)}}">View More</a>
                 <a href="{{route('staff-delete-entry-form',$r->id)}}">Delete</a>
