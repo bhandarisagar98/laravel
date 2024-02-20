@@ -42,3 +42,7 @@ Route::get('/staff/entry-formdelete/{id}',[PreAdmitFormsController::class,'destr
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
